@@ -1,0 +1,92 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 96%;
+}
+
+.container1-left img {
+  height: 70px;
+  margin-left: 70px;
+}
+.navbar a.nav-link {
+  color: var(--text-color, #000000) !important;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar a.nav-link:hover {
+  color: var(--primary-color, #007bff) !important;
+}
+.container1-right ul {
+  margin: 10px;
+  padding: 10px;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+/* 🌙 Dark Theme */
+.dark-theme {
+  background-color: #121212;
+  color: #fff;
+}
+
+.dark-theme .navbar {
+  background-color: rgba(30, 30, 30, 0.9) !important;
+}
+
+.dark-theme .nav-link {
+  color: #ddd !important;
+}
+
+.dark-theme .product-card {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-color: #333;
+}
+
+/* 💙 Active Link Style */
+.navbar .nav-link.active-link,
+.navbar .nav-link.active {
+  color: #007bff !important;
+  font-weight: 600;
+  border-bottom: 2px solid #007bff;
+  transition: 0.3s ease;
+}
+
+.filter-section {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#productList .card {
+  border: none;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#productList .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.price {
+  color: #007bff;
+  font-weight: bold;
+}

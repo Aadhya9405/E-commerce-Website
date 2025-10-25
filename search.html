@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdhivyaWear</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style-search.css">
+  <script src="https://kit.fontawesome.com/a2e8d0339d.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ✅ Same Navbar as Home Page -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container1">
+      <div class="container1-left">
+        <img src="assets/images/logo (2).png" alt="logo" height="80px">
+      </div>
+      <div class="container1-right">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link " href="product.html">Products</a></li>
+            <li><a href="search.html" class="nav-link active">Search</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-3"><a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart fs-5"></i></a></li>
+            
+            <li class="nav-item ms-3">
+              <button id="themeToggle" class="btn btn-sm btn-outline-primary">🌙</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Section -->
+   <br>
+   <br>
+  <section class="search-section">
+    <h2>Find Your Perfect Style ✨</h2>
+
+    <!-- Category Filter -->
+    <div class="categories">
+      <button class="category active" data-category="all">All</button>
+      <button class="category" data-category="women">Women</button>
+      <button class="category" data-category="men">Men</button>
+      <button class="category" data-category="ethnic">Ethnic Wear</button>
+      <button class="category" data-category="accessories">Accessories</button>
+      <button class="category" data-category="festive">Festive</button>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search for dresses, jackets, tops..." autocomplete="off" />
+      <button id="searchBtn">Search</button>
+      <ul id="suggestionBox" class="suggestions"></ul>
+    </div>
+
+    <!-- Trending Tags -->
+    <div class="trending">
+      <h3>Trending Searches 🔥</h3>
+      <div class="tags">
+        <span class="tag">Summer Dress</span>
+        <span class="tag">Denim Jacket</span>
+        <span class="tag">Ethnic Kurta</span>
+        <span class="tag">Casual Tops</span>
+        <span class="tag">Festive Saree</span>
+      </div>
+    </div>
+
+    <!-- Search Results -->
+    <div id="resultsContainer" class="results"></div>
+  </section>
+
+  <script src="assets/js/script-search.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdhivyaWear</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style-contact.css">
+  <script src="https://kit.fontawesome.com/a2e8d0339d.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ✅ Same Navbar as Home Page -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container1">
+      <div class="container1-left">
+        <img src="assets/images/logo (2).png" alt="logo" height="80px">
+      </div>
+      <div class="container1-right">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+            <li><a href="search.html" class="nav-link">Search</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-3"><a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart fs-5"></i></a></li>
+            <li class="nav-item ms-3">
+              <button id="themeToggle" class="btn btn-sm btn-outline-primary">🌙</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+   <br>
+   <br>
+  <section class="contact-hero">
+    <div class="container hero-inner">
+      <h1>Contact Us</h1>
+      <p class="hero-sub">Questions, custom orders, or collaborations — we’re here to help.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT FORM + NEWSLETTER ===== -->
+  <main class="container contact-area">
+    <div class="contact-grid">
+      <!-- Left: Form -->
+      <div class="form-panel">
+        <form id="contactForm" action="#" method="post" novalidate>
+          <div class="row">
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+
+          <div class="row">
+            <input type="tel" id="phone" name="phone" placeholder="Phone (optional)">
+          </div>
+
+          <div class="row">
+            <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+          </div>
+
+          <div class="row actions">
+            <button type="submit" class="btn-primary">Submit Message</button>
+            <div id="contactSuccess" class="success" aria-live="polite" hidden>Thank you — we'll get back to you shortly.</div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right: Newsletter card -->
+      <aside class="news-panel">
+        <div class="newsletter-card">
+          <h3>Our Newsletter</h3>
+          <p>Get styling tips, early drops and exclusive discounts — straight to your inbox.</p>
+          <form id="newsForm" action="#" novalidate>
+            <input type="email" id="newsEmail" name="newsEmail" placeholder="Your email" required>
+            <button type="submit" class="btn-secondary">Subscribe</button>
+            <div id="newsSuccess" class="success" aria-live="polite" hidden>Subscribed — welcome to AdhivyaWear.</div>
+          </form>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Action / CTA (optional) -->
+    <div class="contact-cta">
+      <p>Prefer a direct call? <strong>+1 (876) 765 665</strong></p>
+    </div>
+  </main>
+
+  <!-- ===== CONTACT INFO CARDS ===== -->
+  <section class="container contact-cards">
+    <div class="cards-grid">
+      <div class="card">
+        <h4>Phone</h4>
+        <p>+1 (876) 765 665</p>
+        <small>Mon — Fri, 9:00 — 18:00</small>
+      </div>
+      <div class="card">
+        <h4>Email</h4>
+        <p>hello@adhivyawear.com</p>
+        <small>General inquiries & support</small>
+      </div>
+      <div class="card">
+        <h4>Studio</h4>
+        <p>London Eye District (placeholder)</p>
+        <small>Showroom & press visits by appointment</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP ===== -->
+  <section class="map-section">
+    <!-- Replace the src address query with your own address or place ID -->
+    <iframe
+      title="AdhivyaWear location"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19854.99999999999!2d-0.127758!3d51.507351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3333333333%3A0xabcdefabcdefabcd!2sLondon!5e0!3m2!1sen!2sus!4v0000000000000"
+      allowfullscreen=""
+      loading="lazy"></iframe>
+  </section>
+
+  <!-- ===== FOOTER (keeps the elegant theme) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>AdhivyaWear</strong>
+        <p class="muted">© 2025 AdhivyaWear — Define Your Style, Own Your Story</p>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-links">
+          <a href="/about">About</a>
+          <a href="/shop">Shop</a>
+          <a href="/privacy">Privacy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script-contact.js"></script>
+</body>
+</html>

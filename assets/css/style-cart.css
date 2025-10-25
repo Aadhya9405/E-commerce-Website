@@ -1,0 +1,150 @@
+/* =======================
+   CART PAGE STYLING
+======================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fbff;
+  color: #333;
+}
+
+/* Navbar alignment fix */
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 96%;
+}
+
+.container1-left img {
+  height: 70px;
+  margin-left: 70px;
+}
+.navbar a.nav-link {
+  color: var(--text-color, #000000) !important;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar a.nav-link:hover {
+  color: var(--primary-color, #007bff) !important;
+}
+.container1-right ul {
+  margin: 10px;
+  padding: 10px;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+
+/* Table Styling */
+.table {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+  background-color: #e3f0ff;
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.table img {
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+/* Quantity Input */
+.quantity-input {
+  width: 70px;
+  border-radius: 8px;
+  border: 1px solid #dce3f0;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.quantity-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-danger {
+  background-color: #ff4b4b;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #e33a3a;
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+/* Total Section */
+#totalAmount {
+  color: #0d6efd;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.text-end h4 {
+  font-weight: 600;
+}
+
+#checkoutBtn {
+  font-size: 1rem;
+  padding: 10px 25px;
+}
+
+/* Empty Cart */
+#cartTable tbody tr td[colspan="5"] {
+  padding: 50px 0;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .table img {
+    height: 40px;
+  }
+
+  .quantity-input {
+    width: 60px;
+  }
+
+  #checkoutBtn {
+    width: 100%;
+  }
+
+  .text-end {
+    text-align: center !important;
+    margin-top: 20px;
+  }
+}
