@@ -1,8 +1,5 @@
-// script.js
-
-// Simple counter animation for stats
 const counters = document.querySelectorAll('.counter');
-const speed = 150; // smaller = faster
+const speed = 150;
 
 counters.forEach(counter => {
   const updateCount = () => {
@@ -12,7 +9,7 @@ counters.forEach(counter => {
 
     if (count < target) {
       counter.innerText = Math.ceil(count + increment);
-      setTimeout(updateCount, 30);
+      setTimeout(updateCount, 20);
     } else {
       counter.innerText = target;
     }
